@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {background-color: #293244;}
+        img {width: 35%; float: left;}
+        div {background-color: #98c1d9; width: 65%; float: right;}
+        form {margin: 10px;}
+        label {font-size: 20px;}
+        input {font-size: 20px;}
+    </style>
+    <head><h1 style="text-align: center; color: #98c1d9;">Feedback Time</h1>
+        <h2 style="text-align: center; color: #98c1d9;">Leave some thoughts on my website!</h2></head>
+    <body>
+        <img src="Feedback Folder/Lines of Code.png">
+        <div>
+            <form action="About Webpage.html" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" value="" style="width: 90%" required><br><br>
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" name="age" value="" style="width: 40px;" required><br><br>               
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="fav_gender" value="male" required>
+                <label for="gender">Male</label><br>
+                <input type="radio" id="female" name="fav_gender" value="female" required>
+                <label for="gender">Female</label><br><br>          
+                <label for="rating">Rating (out of 5):</label><br>
+                <input type="number" id="rating" value="" min="0" max="5" required><br><br>
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="75" style="font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;"></textarea>
+                <br><br>
+                <a><button type="submit" value="submit" style="font-size: 20px;
+                border-radius: 20px; border: black solid 3px;" 
+                onclick="alert('Fill out the form to be redirected. Once done, much appreciated.')">
+                Submit</button></a>&nbsp;
+                <input type="reset" value="Reset" style="font-size: 20px; border-radius: 20px; 
+                border: black solid 3px;">&nbsp;&nbsp;
+                <label>&#169; MOHAMMAD HAFIZ IRFAN BIN SHARIZAL, 2024</label>
+            </form>
+        </div>
+    </body>
+</html>

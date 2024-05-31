@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<title>About Webpage</title>
+<html lang="en">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {padding: 10px; background-color: #98c1d9; font-family: 'Times New Roman', Times, serif; 
+        border: black 5px solid; font-weight: bolder; font-size: 40px; text-align: center; border-radius: 30px;
+        overflow: auto; color: #000000; width: 83%; float: right;}
+        body {background-color: #293241;}
+        .navbar {overflow: auto; background-color: inherit; float: right; margin-top: 10px; 
+            background-color: #98c1d9; margin-bottom: 10px; border-radius: 25px;}
+        .navbar a {float: left; font-size: 16px; text-align: center; padding: 14px 16px; color: black;
+        text-decoration: none; border: black 3px solid;}
+        .navbar a:hover {background-color: lightblue; color: black;}
+    </style>
+    <style>
+        .accordion {background-color: #98c1d9; color: black; cursor: pointer; padding: 18px; width: 100%;
+        border: none; text-align: left; outline: none; font-size: 15px; transition: 0.4s; margin-top: 10px;}
+        .active, .accordion:hover {background-color: #ee6c4d;}
+        .panel {padding: 0 18px; background-color: #e0fbfc; max-height: 0; overflow: auto;
+          transition: max-height 0.2s ease-out;}
+        #p1 {margin-left: 10px; margin-right: 10px; font-size: 17px; line-height: 1.5; float: left; 
+            border: black 3px solid; padding: 5px;}
+        #h2 {font-size: 15px; font-display: bold;}
+        .column {float: left; width: 120px; padding: 10px; height: 120px; margin: 10px; overflow: auto;}
+        .row:after {content: ""; display: table; clear: both;}
+        </style>
+<img src="About Folder/Image/Hafiz's Signature.png" style="float: left; width: 2cm; height: 50px; 
+border: black 2px solid; border-radius: 25px; margin-left: 10px; width: 170px; height: 70px;">
+<header>Mohammad Hafiz Irfan bin Sharizal's Personal Website</header>
+<body onload="startTime()">
+<div class="navbar">
+    <a href="Homepage.html">Home</a><a href="About Webpage.html" style="background-color: white;">About</a>
+    <a href="Content Webpage.html">Content</a><a href="Feedback Webpage.html">Feedback</a>
+    <a style="background-color: black; color: white;">
+      &#169; MOHAMMAD HAFIZ IRFAN BIN SHARIZAL, 2024</a>
+    <a id="txt" style="background-color: black; color: white;"></a>
+    <script> function startTime() {const today = new Date(); let h = today.getHours(); let m = today.getMinutes();
+      let s = today.getSeconds(); m = checkTime(m); s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s; setTimeout(startTime, 1000);}
+    function checkTime(i) {if (i < 10) {i = "0" + i}; return i;}</script>
+    <a style="background-color: black; width: 400px; height: 18px;">
+    <form action="https://www.google.com/search" class="searchform" method="get" 
+    name="searchform" target="_blank" style="float: right;">
+    <input name="" type="hidden" value="" style="border-radius: 10px;">
+    <input autocomplete="on" class="form-control search" name="q" placeholder="Search" type="text" 
+    style="width: 350px;">
+    <button class="button" type="submit" style="border-radius: 10px; width: 30px;">&#10148;</button>
+    </form></a></div> 
+    <button class="accordion">Portfolio</button>
+    <div class="panel">
+      <section>
+      <img src="About Folder/Image/Hafiz's Formal Picture.jpg" width="200" height="200" 
+      style="float: left; margin: 10px; border-radius: 20px;" title="Mohammad Hafiz Irfan bin Sharizal">
+      <p id="p1">Name: Mohammad Hafiz Irfan bin Sharizal</p><p id="p1">Date of Birth: 29/7/2003</p>
+      <p id="p1">Gender: Male</p><p id="p1">Faith: Islam</p><p id="p1">Race: Malay</p>
+      <p id="p1">Nationality: Malaysian</p><p id="p1">Birthplace: Klang</p>
+      <p id="p1">Ambition: Information Scientist</p><p id="p1">STPM: 3.5</p><p id="p1">Expertise: Management</p>
+      <p id="p1">Passion: Artistry (poetry)</p></section>       
+      <p style="text-indent: 30px; background-color: #829cd0; padding: 15px; border-radius: 25px; 
+      font-size: larger; float: left;">Ever need somebody to bring order to mitigate the chaos? Well, you don't 
+    have to look far. I am an astute and observant manager that have expert power for people to look for as
+    guidance. I also have no issue in presenting coerciveness to wrangle wild bulls of the organization back into
+    place. Communicating ideas and direction-pointing are the key aspects of who I am as a person. It also helps
+    that as a bilingual with an impressively strong grasp of both Malay and English, I can converse with people
+    who are limited to these langauges. I am also an avid composer and enjoyer of poetry. However, in spite of my
+    achievements, I also admit that there are still more things to learn in life. Embark on this journey together 
+    with me by browsing my website! Toodles and adios, people.</p>
+    </div>  
+    <button class="accordion">Journey</button>
+    <div class="panel">
+      <article style="text-align: center; font-size: larger;">
+        <h2>Mein Akademisches Leben</h2>
+    <p>Kindergarten: Tadika Nilam <br> &#x2193 <br> Preschool: SK Jenderam Hulu <br> &#x2193 <br> 
+        Primary School: SK Bukit Bandaraya <br> &#x2193 <br> Secondary School: SMK Bukit Bandaraya: (PT3), 
+        SMK Bandar Tasik Kesuma (SPM) <br> &#x2193 <br> STPM: Kajang High School (Semester 1 - Late Semester 2) & 
+        SMK Bandar Tasik Kesuma (Late Semester 2 - Semester 3) <br> &#x2193 <br> Degree: UiTM Rembau 
+        (Bachelors in Library Management) (currently in Sem 2)
+    </p>
+    </article>
+    </div>    
+    <button class="accordion">Contacts</button>
+    <div class="panel">
+      <div class="row">
+        <a href="https://www.youtube.com/@half-fizz-ear-fan"><div class="column" style="background-color: #ff474c; color: white;">
+          <img src="About Folder/Image/YouTube Logo.png" width="40" height="40" style="margin-top: 10px;">
+          <h2 id="h2">YouTube</h2>
+        </div></a>
+        <a href="https://www.tiktok.com/@hafizirfanzerothree?_t=8mWmwXTteG9&_r=1"><div class="column" style="background-color: #44444c; color: white;">
+            <img src="About Folder/Image/TikTok Logo.png" width="40" height="40" style="margin-top: 10px; margin-left: 10px;">
+            <h2 id="h2">TikTok</h2>
+          </div></a>
+         <a href="https://x.com/MHIBS_03?t=NAc4tvxYKW2kNF5u0fvlRQ&s=09"><div class="column" style="background-color:#8c8c8c; color: black;">
+            <img src="About Folder/Image/X Logo.png" width="40" height="40">
+            <h2 id="h2">X</h2>
+          </div></a>
+          <a href="https://www.instagram.com/mohd.hafiz.irfan_rasmi?igsh=c3hwYnNla3oxNGFi"><div class="column" style="background-color:magenta; color: black;">
+            <img src="About Folder/Image/Instagram Logo.png" width="40" height="40" style="margin-top: 10px;">  
+            <h2 id="h2">Instagram</h2>
+            </div></a>
+          <a href="https://www.linkedin.com/in/hafiz-irfan-7622b530b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><div class="column" style="background-color:#00b4b8; color: black;">
+            <img src="About Folder/Image/LinkedIn Logo.png" width="40" height="40" style="margin-left: 10px; margin-top: 10px;">
+            <h2 id="h2">LinkedIn</h2>
+            </div></a>
+          <a href="https://pondokhafiz.blogspot.com/"><div class="column" style="background-color:#ffb35d; 
+            color: black;">
+            <img src="About Folder/Image/Blogger Logo.png" width="40" height="40" style="margin-left: 10px; margin-top: 10px;">
+            <h2 id="h2">Blogger</h2>
+            </div></a>
+          <div class="column" style="background-color:white">
+            <h2 id="h2">Misc.</h2>
+              <ol style="float: left; padding-left: 15px;">
+                <a href="mailto:@ihafiz362@gmail.com"><li>E-mail</li></a>
+              </ol>
+          </div>
+        </div>
+    </div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i; for (i = 0; i < acc.length; i++) {acc[i].addEventListener("click", function() 
+    {this.classList.toggle("active"); var panel = this.nextElementSibling; if (panel.style.maxHeight) 
+    {panel.style.maxHeight = null;} else {panel.style.maxHeight = panel.scrollHeight + "px";} });}
+    </script>
+  </body>
+</html>

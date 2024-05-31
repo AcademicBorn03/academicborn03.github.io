@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<title>About Webpage</title>
+<html lang="en">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {padding: 10px; background-color: #98c1d9; font-family: 'Times New Roman', Times, serif; 
+        border: black 5px solid; font-weight: bolder; font-size: 40px; text-align: center; border-radius: 30px;
+        overflow: auto; color: #000000; width: 83%; float: right;}
+        body {background-color: #293241;}
+        .navbar {overflow: auto; background-color: inherit; float: right; margin-top: 10px; 
+            background-color: #98c1d9; margin-bottom: 10px; border-radius: 25px;}
+        .navbar a {float: left; font-size: 16px; text-align: center; padding: 14px 16px; color: black;
+        text-decoration: none; border: black 3px solid;}
+        .navbar a:hover {background-color: lightblue; color: black;}
+</style>
+<style>
+        .accordion {background-color: #98c1d9; color: black; cursor: pointer; padding: 18px; width: 100%;
+        border: none; text-align: left; outline: none; font-size: 15px; transition: 0.4s; margin-top: 10px;}
+        .active, .accordion:hover {background-color: #ee6c4d;}
+        .panel {padding: 0 18px; background-color: white; overflow: auto; max-height: 0;
+          transition: max-height 0.2s ease-out;}
+</style>
+<img src="Content Folder/Image/PNG or JPG/Hafiz's Signature.png" style="float: left; width: 2cm; height: 50px; 
+border: black 2px solid; border-radius: 25px; margin-left: 10px; width: 170px; height: 70px;">
+<header>Mohammad Hafiz Irfan bin Sharizal's Personal Website</header>
+<body onload="startTime()">
+<div class="navbar">
+    <a href="Homepage.html">Home</a><a href="About Webpage.html">About</a>
+    <a href="Content Webpage.html" style="background-color: white;">Content</a>
+    <a href="Feedback Webpage.html">Feedback</a>
+    <a style="background-color: black; color: white;">
+      &#169; MOHAMMAD HAFIZ IRFAN BIN SHARIZAL, 2024</a>
+    <a id="txt" style="background-color: black; color: white;"></a>
+    <script> function startTime() {const today = new Date(); let h = today.getHours(); let m = today.getMinutes();
+      let s = today.getSeconds(); m = checkTime(m); s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s; setTimeout(startTime, 1000);}
+    function checkTime(i) {if (i < 10) {i = "0" + i}; return i;}</script>
+    <a style="background-color: black; width: 400px; height: 18px;">
+    <form action="https://www.google.com/search" class="searchform" method="get" 
+    name="searchform" target="_blank" style="float: right;">
+    <input name="" type="hidden" value="" style="border-radius: 10px;">
+    <input autocomplete="on" class="form-control search" name="q" placeholder="Search" type="text" 
+    style="width: 350px;">
+    <button class="button" type="submit" style="border-radius: 10px; width: 30px;">&#10148;</button>
+    </form></a></div>
+    <button class="accordion">Album</button>
+    <div class="panel">     
+      <style>
+        body {font-family: 'Times New Roman', Times, serif;}
+        .tab {overflow: auto; border: 3px solid black; background-color: black; margin: 10px;}
+        .tab button {background-color: #98c1d9; float: left; border: none; outline: none; cursor: pointer;
+          padding: 14px 16px; transition: 0.3s; font-size: 17px; border: #000000 3px solid;}
+        .tab button:hover {background-color: #ddd;}
+        .tab button.active {background-color: #ccc;}
+        .tabcontent {display: block; padding: 6px 12px; border: 3px solid black; 
+          overflow: auto; background-color: #e0fbfc; margin: 10px;}
+        .responsive {width: 45%; height: auto;}
+        figure {border: 3px solid black;}
+        </style>       
+        <body>    
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')">Animation</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Music</button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Photo</button>
+          <button class="tablinks" onclick="openCity(event, 'New York')">Video</button>
+        </div>     
+        <div id="London" class="tabcontent">
+          <h3>Animation</h3>
+          <p>Here are some animations I found.</p>
+          <style>
+            #div1 {width: 100px; height: 100px; background-color: red; animation-name: example;
+              animation-duration: 8s; animation-iteration-count: infinite;}
+            @keyframes example {0%   {background-color: red;} 25%  {background-color: yellow;}
+              50%  {background-color: blue;} 100% {background-color: green;}}
+            </style>
+            <style> 
+              #div2 {width: 100px; height: 100px; background-color: red; position: relative;
+                animation-name: example; animation-duration: 8s; animation-iteration-count: infinite;}
+              @keyframes example {0%   {background-color:red; left:0px; top:0px;}
+              25%  {background-color:yellow; left:70%; top:0px;}
+              50%  {background-color:blue; left:35%; top:0px;}
+              75%  {background-color:green; left:70%; top:0px;}
+              100% {background-color:red; left:0%; top:0px;}}
+              </style>
+              <figure style="border: #000000 3px solid;" title="My HTML Animation"><div id="div1"></div>
+                <div id="div2"></div></figure>             
+              <div style="border: #000000 3px solid; overflow: auto;">
+              <img src="Content Folder/Image/GIF/Rotating Earth GIF.gif" style="width: 30%; float: left; 
+              margin: 10px;" 
+              title="Rotating Earth GIF">
+              <img src="Content Folder/Image/GIF/MJ Eating Popcorn GIF.gif" style="width: 30%; margin: 10px" 
+              title="Michael Jackson Having Some Popcorn GIF">
+              <img src="Content Folder/Image/GIF/Nyan Cat GIF.gif" style="width: 30%; margin: 10px" 
+              title="Nyan Cat GIF">
+            </div>
+        </div>       
+        <div id="Paris" class="tabcontent">
+          <h3>Music</h3>
+          <p>Here are some of my music collection.</p>
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/Asian Gardens (ft. Shen Shen).mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">Asian Gardens by Daniel Barbosa <br> ft. Shen Shen</h3>
+          </div>      
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/Bring It On.mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">Bring It On by Keitarou Hanada</h3>
+          </div>
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/Brutality -Rebuild-.mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">Brutality -Rebuild- by Chihiro Aoki</h3>
+          </div>   
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/Impregnable Triangle.mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">Impregnable Triangle by Chihiro Aoki</h3>
+          </div>
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/Obedience.mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">Obedience by Keitaro Hanada</h3>
+          </div>    
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/Psycho's Anthem.mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">Psycho's Anthem by Ryo Fukoda</h3>
+          </div>
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/Soul of the Ogre.mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">Soul of the Ogre by Shunsuke Yasaki</h3>
+          </div>
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/The End of Denial.mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">The End of Denial by Chihiro Aoki</h3>
+          </div>
+          <div style="border: 3px solid black; width: max-content; border-radius: 25px;
+          background-color: cornsilk; margin: 10px; padding: 10px; display: block;
+          margin-left: auto; margin-right: auto;">
+          <audio controls>
+            <source src="Content Folder/Music/Treachery.mp3" type="audio/mpeg">
+            </audio><h3 style="text-align: center;">Treachery by Takahiro Kai</h3>
+          </div>
+        </div>
+        <div id="Tokyo" class="tabcontent">
+          <h3>Photo</h3>
+          <p>Here are some photos I have taken.</p>
+          <img src="Content Folder/Image/PNG or JPG/Garden 1.jpg" class="responsive" 
+          style="border: 3px solid black;" title="Garden (1/3)">
+          <img src="Content Folder/Image/PNG or JPG/Garden 2.jpg" class="responsive" 
+          style="border: 3px solid black;" title="Garden (2/3)">
+          <img src="Content Folder/Image/PNG or JPG/Garden 3.jpg" class="responsive" 
+          style="border: 3px solid black;" title="Garden (3/3)">
+          <img src="Content Folder/Image/PNG or JPG/Home.jpg" class="responsive" 
+          style="border: 3px solid black;" title="My Home">
+          <img src="Content Folder/Image/PNG or JPG/My Selfie.jpg" class="responsive" 
+          style="border: 3px solid black;" title="Selfie">
+          <img src="Content Folder/Image/PNG or JPG/Picture of My Picture in Webpage.jpg" class="responsive" 
+          style="border: 3px solid black;" title="Pretty meta, huh? Didn't expect that, didn't you?">
+        </div>        
+        <div id="New York" class="tabcontent">
+          <h3>Video</h3>
+          <p>My favourite videos.</p>
+          <video controls style="border: black 3px solid;" class="responsive">
+            <source src="Content Folder/Video/Hood Fight.mp4" type="video/mp4" title="Hood Fight">
+          </video>
+          <video controls style="border: black 3px solid;" class="responsive">
+            <source src="Content Folder/Video/Fart Gunshots.mp4" type="video/mp4" title="Fart Gunshots">
+          </video>
+          <iframe width="100%" height="600" src="https://www.youtube.com/embed/eOoCfnN3k5M?si=C9m9gwDhiwKFtnr4" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+          encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <script>
+        function openCity(evt, cityName) {var i, tabcontent, tablinks; 
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {tabcontent[i].style.display = "none";}
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {tablinks[i].className = 
+            tablinks[i].className.replace(" active", "");}
+          document.getElementById(cityName).style.display = "block"; evt.currentTarget.className += " active";}
+        </script>
+    </div> 
+    <button class="accordion">Diary</button>
+    <div class="panel">       
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Kuala Lumpur')">Thoughts</button>
+          <button class="tablinks" onclick="openCity(event, 'Jakarta')">Poetry</button>
+        </div>        
+        <div id="Kuala Lumpur" class="tabcontent">
+          <h3>Thoughts</h3>
+          <p>Here are some thoughts to share.</p>
+          <article style="width: 60%; float: left;
+          border: #000000 3px solid; margin: 10px; padding: 10px; border-radius: 25px;">
+          <h2 style="text-align: center;">Ego Typing</h2><p style="text-indent: 25px; text-align: justify; 
+          font-size: 20px;">
+            It's an accepted fact that the world runs with knowledge as the source of all initiatives. After all, 
+            knowledge acts as building blocks to found a structure, whether it be families, institutions, 
+            corporations, or governments. A competitive, tiring, yet exhilarating cycle of trials is what binds 
+            every human being altogether, all for the pursuit of the invaluable commodity. In this race, many Atlas 
+            have been crafted to carry the weight of the world for others to fluorish. They are often associated as 
+            guardians of knowledge, safeguarding the worth of intellect for generations to come.</p><br><br>
+            <p style="text-indent: 25px; text-align: justify; 
+            font-size: 20px;">As of now, I am one of the many in-training strong-willed students of life that absorbs 
+            every bit of knowledge like a sponge. I have bathed myself in my own blood, seat, and tears braving 
+            through the dense jungle of intellectual hardships. Through those experiences, I have learned many 
+            skills and ideas that carry weight on the world. Maturity really comes with age, yet the journey truly 
+            ends with my demise. There are still more skills to learn, acquire, and practice. There are also many 
+            tales of wisdom awaiting me in the game of life, so may Allah support me in my pursuit of excellence. 
+            This is me, myself, and I, Mohammad Hafiz Irfan bin Sharizal.</p></article>
+            <article style="margin: 10px; text-align: justify; width: 30%; border: #000000 3px solid; 
+            padding: 10px; float: right; border-radius: 25px;">
+              <h2 style="text-align: center;">
+              Interesting Sayings</h2>
+              <p style="font-size: 20px;">A stitch in time saves nine<br><br>
+              Absence makes the heart grow fonder<br><br>
+              People who live in glass houses shouldn't throw stones<br><br>
+              Strike while the iron's hot<br><br>
+              Fortune favors the brave<br><br>
+              You can't make an omelette without breaking a few eggs<br><br>
+              One man's trash is another man's treasure<br><br>
+              <p style="font-style: italic;">- McGough, 2024</p>
+              </article>
+        </div>       
+        <div id="Jakarta" class="tabcontent">
+          <h3>Poetry</h3>
+          <p>Here are some of my poems.</p>         
+          <div style="border: black 3px solid; float: left; padding: 10px; border-radius: 25px;
+          width: 45%;">
+            <h2 style="text-align: center;">At, I am</h2>
+          <p style="font-size: 20px;">
+            There I was...<br>
+            At the sole of the world<br>
+            At the limit of wit<br>
+            At the action of fashion<br>
+            At the reason of season<br><br>
+
+            Here I am...<br>
+            Living through it all<br>
+            Braving the cold of fall<br>
+            Standing tall<br>
+            Hearing the call<br><br>
+
+            But the noises are too loud<br>
+            Casanova have people playing foul<br>
+            Fireworks firing in the sky, popped fowl<br>
+            Paranoia boils up, winging me a cowl<br><br>
+
+            At, I am<br>
+            The journey of life
+          </p>
+          </div>
+          <div style="border: black 3px solid; float: right; padding: 10px; border-radius: 25px; width: 45%;">
+            <h2 style="text-align: center;">Isyarat Syawal</h2>
+          <p style="font-size: 20px;">
+            Terbitnya sinar suria<br>
+            Menerangi panorama<br>
+            Yang menunggu riang ria<br>
+            Menang menanti selama<br><br>
+
+            Saat itulah langit berlagu<br>
+            Alunan muluk mengagungkan<br>
+            Umat Adam menurun dagu<br>
+            Syah Awal menceriakan<br><br>
+
+            Maha Besar<br>
+            Tidak berteman<br>
+            Maha Besar<br>
+            Puji beriman<br><br>
+
+            Al-Awwal<br>
+            Al-Muhyi<br>
+            Al-Mumit<br>
+            Al-Akhir<br><br>
+
+            Minda berdina, menusuk kalbu, meremang raga.<br>
+            Sementara bukanlah selamanya.<br>
+            Riang biar bersauh, agar tidak berlayar hilang.<br>
+            Di antara dekahan tawa, gemersik tangisan.
+          </p>
+          </div>
+        </div>
+        <script>
+        function openCity(evt, cityName) {var i, tabcontent, tablinks; 
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {tabcontent[i].style.display = "none";}
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {tablinks[i].className = 
+            tablinks[i].className.replace(" active", "");}
+          document.getElementById(cityName).style.display = "block"; evt.currentTarget.className += " active";}
+        </script>
+    </div>  
+    <button class="accordion">Studies</button>
+    <div class="panel">
+      <h3>Current Studies</h3>
+          <p>Here is what I am currently learning.</p>
+          <h3 style="text-align: center;">Semester 2, CDIM260 (Bachelors in Library Management), UiTM Rembau</h3>
+          <style>
+            table {width: 100%; display: block; margin-left: auto; margin-right: auto; font-size: 20px;}
+            th {border: #000000 3px solid; padding: 5px;}
+            td {border: #000000 3px solid; padding: 5px;}
+          </style>
+          <table>
+            <tr>
+              <th>No.</th>
+              <th>Course Code</th>
+              <th>Course Name</th>
+              <th>Lecturer</th>
+              <th>What I've Learned</th>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>CTU554</td>
+              <td>Values & Civilization II</td>
+              <td>Dr. Adibah binti Bahori</td>
+              <td><ul>
+                <li>Importance of Harmony</li>
+                <li>Social Issues</li>
+                <li>Technology in Civilization</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>HGR113</td>
+              <td>Management of Mosque Institution</td>
+              <td>Mohd. Sairin bin Sarlan</td>
+              <td><ul>
+                <li>Development of Mosques</li>
+                <li>Mosques and Civilization</li>
+                <li>Actvities in Mosques</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>IMC452</td>
+              <td>Introduction to Metadata</td>
+              <td>Mohd Faizal bin Mohd Ramsi</td>
+              <td><ul>
+                <li>Types of Metadata</li>
+                <li>Management of Metadata</li>
+                <li>Importance of Metadata</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>IML460</td>
+              <td>ICT Application in Libraries & Media Centers</td>
+              <td>Siti Khairiyah binti Nordin</td>
+              <td><ul>
+                <li>Relationship between ICT and Libraries & Media Centers</li>
+                <li>ICT Usage in Libraries & Media Centers</li>
+                <li>ICT Competencies Needed in Libraries & Media Centers</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>IML465</td>
+              <td>Digital Reference Services</td>
+              <td>Dr. Zahril Shahida binti Ahmad</td>
+              <td><ul>
+                <li>Reference Methodologies</li>
+                <li>Parties Invloved in Reference Services</li>
+                <li>Types of Communication in Reference Services</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>6.</td>
+              <td>IML470</td>
+              <td>Introduction to Web Development & Library Portal</td>
+              <td>Ahmad Soufiean bin Othman</td>
+              <td><ul>
+                <li>HTML Basics</li>
+                <li>CSS Basics</li>
+                <li>KOHA Library Software</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>7.</td>
+              <td>MGT400</td>
+              <td>Introduction of Management</td>
+              <td>Ahmad Farouk bin Zulkifli</td>
+              <td><ul>
+                <li>Management Theories</li>
+                <li>Principles of Management</li>
+                <li>Social Behaviour</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>8.</td>
+              <td>TAC401</td>
+              <td>Introductory Arabic (Level I)</td>
+              <td>Nur Aini binti Ariffin</td>
+              <td><ul>
+                <li>Arabic Tenses</li>
+                <li>Arabic Grammar</li>
+                <li>Conversational Arabic</li>
+              </ul></td>
+            </tr>
+          </table>
+    </div>
+    <p style="text-align: center; font-size: 20px; background-color: white; max-width: fit-content;
+    display: block; margin-left: auto; margin-right: auto; padding: 10px;">
+    If the menu doesn't fully extend vertically once a panel within it is clicked, close it and open again.</p>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i; for (i = 0; i < acc.length; i++) {acc[i].addEventListener("click", function() 
+    {this.classList.toggle("active"); var panel = this.nextElementSibling; if (panel.style.maxHeight) 
+    {panel.style.maxHeight = null;} else {panel.style.maxHeight = panel.scrollHeight + "px";} });}
+    </script>
+  </body>
+</html>
